@@ -1,0 +1,15 @@
+# Ignore compiled Java files
+*.class
+
+# Ignore Log files
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE-specific folders (if you use IntelliJ, Eclipse, or BlueJ)
+.idea/
+.project
+.classpath
+bin/
