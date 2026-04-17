@@ -1,0 +1,35 @@
+import java.lang.Math;
+
+public class Car {
+   private int modelYear;
+   private int purchasePrice;
+   private int currentValue;
+
+   public void setModelYear(int userYear) {
+      modelYear = userYear;
+   }
+
+   public int getModelYear() {
+      return modelYear;
+   }
+
+   public void setPurchasePrice(int userPrice) {
+      purchasePrice = userPrice;
+   }
+
+   public int getPurchasePrice() {
+      return purchasePrice;
+   }
+
+   public void calcCurrentValue(int currentYear) {
+      int carAge = currentYear - modelYear;
+      currentValue = (int) Math.round(purchasePrice * Math.pow(0.85, carAge));
+   }
+
+   public void printInfo() {
+      System.out.println("Car's information:");
+      System.out.println("  Model year: " + modelYear);
+      System.out.println("  Purchase price: $" + purchasePrice);
+      System.out.println("  Current value: $" + currentValue);
+   }
+}
